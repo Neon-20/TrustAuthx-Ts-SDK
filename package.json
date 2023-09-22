@@ -1,0 +1,21 @@
+{
+  "name": "npm-package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.3",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2"
+  }
+}
